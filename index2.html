@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Static Template</title>
+  </head>
+  <body>
+    <script>
+      // write your code here
+      class Animal{
+         constructor(name, age, sound){
+            this.name =name;
+            this.age= age;
+            this.sound =sound;
+         }
+         makeSound(){
+            console.log(this.sound);
+         }
+
+      }
+      class Cat extends Animal {
+        constructor(name, age ,breed){
+            super(name, age, "meow");
+            this.breed = breed;
+        }
+        meow(){
+            console.log("meow");
+
+        }
+      }
+    </script>
+  </body>
+</html>
